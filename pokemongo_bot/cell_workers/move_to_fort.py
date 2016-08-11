@@ -61,6 +61,7 @@ class MoveToFort(BaseTask):
             fort_event_data = {
                 'fort_name': u"{}".format(fort_name),
                 'distance': format_dist(dist, unit),
+                'current_position': self.bot.position
             }
 
             if self.is_attracted() > 0:

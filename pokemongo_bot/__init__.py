@@ -183,7 +183,8 @@ class PokemonGoBot(object):
             'moving_to_fort',
             parameters=(
                 'fort_name',
-                'distance'
+                'distance',
+                'current_position'
             )
         )
         self.event_manager.register_event(
@@ -191,7 +192,8 @@ class PokemonGoBot(object):
             parameters=(
                 'fort_name',
                 'distance',
-                'lure_distance'
+                'lure_distance',
+                'current_position'
             )
         )
         self.event_manager.register_event(
